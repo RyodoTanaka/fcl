@@ -161,6 +161,7 @@ install(FILES "${pkg_conf_file_out}" DESTINATION ${CMAKE_INSTALL_LIBDIR}/pkgconf
 install(FILES package.xml DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/${PROJECT_NAME})
 find_package(catkin REQUIRED)
 catkin_package(
+  LIBRARIES fcl
   INCLUDE_DIRS
   include
 )
